@@ -52,7 +52,12 @@ class MyRecyclerAdapter(var context: Context): RecyclerView.Adapter<MyRecyclerAd
         val txtImage: ImageView = itemView!!.findViewById(R.id.image)
         override fun onClick(v:View){
             mClickListener.onClick(adapterPosition, v)
-            Toast.makeText(context, txtName.text, Toast.LENGTH_LONG).show()
+            // Toast.makeText(context, txtName.text, Toast.LENGTH_LONG).show()
+            var snackbar = Snackbar.make(v, txtName.text, Snackbar.LENGTH_INDEFINITE)
+            snackbar.setAction("Ok"){
+
+            }
+            snackbar.show()
         }
 
         init {
