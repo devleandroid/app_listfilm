@@ -13,7 +13,7 @@ interface ApiInterface {
 
     companion object {
         //Api para teste http://35.200.174.74/apis/volley_array.json
-        //Api vortigo https://vortigo.blob.core.windows.net/files/pokemon/data/types.json
+        
         var BASE_URL = "http://35.200.174.74/apis/"
 
         fun create(): ApiInterface{
